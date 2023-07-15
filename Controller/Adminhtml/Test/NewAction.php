@@ -18,7 +18,7 @@ class NewAction extends Action
     public function execute()
     {
         $resultPage = $this->pageFactory->create();
-        $resultPage->getConfig()->getTitle()->prepend(__('Add Cedcommerce Extension'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Add Data'));
         return $resultPage;
     }
 }

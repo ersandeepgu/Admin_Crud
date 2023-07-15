@@ -7,10 +7,6 @@ use Sandeep\AdminForm\Model\PostFactory;
 use Magento\Framework\Controller\ResultFactory;
 
 
-
-
-
-
 class Save extends Action
 {
 
@@ -35,7 +31,6 @@ class Save extends Action
             $model->save();
             $this->messageManager->addSuccess( __('Save Successfully') );
         } catch (\Exception $e) {
-            // Handle the exception/error
             $this->messageManager->addErrorMessage(__('Error occurred while saving the data.'));
         }
         return $resultRedirect->setPath('*/*/');

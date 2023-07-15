@@ -12,21 +12,11 @@ use Sandeep\AdminForm\Model\ResourceModel\Post\CollectionFactory;
 class MassDelete extends  \Magento\Framework\App\Action\Action
 {   
 
-     /**
-     * @var Filter
-     */
     protected $filter;
 
-    /**
-     * @var CollectionFactory
-     */
+   
     protected $collectionFactory;
 
-    /**
-     * @param Context $context
-     * @param Filter $filter
-     * @param CollectionFactory $collectionFactory
-     */
     public function __construct(Context $context, Filter $filter, CollectionFactory $collectionFactory)
     {
         $this->filter = $filter;

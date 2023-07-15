@@ -4,9 +4,7 @@ namespace Sandeep\AdminForm\Ui\DataProvider\Form;
 
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
-/**
- * Class ProductDataProvider
- */
+
 class DataProvider extends AbstractDataProvider
 {
     
@@ -40,11 +38,7 @@ class DataProvider extends AbstractDataProvider
         $this->addFilterStrategies = $addFilterStrategies;
     }
 
-    /**
-     * Get data
-     *
-     * @return array
-     */
+   
     public function getData()
     {
         if (!$this->getCollection()->isLoaded()) {

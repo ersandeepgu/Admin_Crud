@@ -36,7 +36,6 @@ class Actions extends Column
                                 ]
                             ),
                             'label' => __('Edit'),
-                            'class' => 'cedcommerce actions edit'
                         ],
                         'delete' => [
                             'href' => $this->urlBuilder->getUrl(
@@ -46,7 +45,6 @@ class Actions extends Column
                                 ]
                             ),
                             'label' => __('Delete'),
-                            'class' => 'cedcommerce actions delete'
                         ],
 
                     ];

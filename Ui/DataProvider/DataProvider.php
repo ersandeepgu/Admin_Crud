@@ -19,17 +19,7 @@ class DataProvider extends AbstractDataProvider
 
     public $addFilterStrategies;
 
-    /**
-     * DataProvider constructor.
-     * @param string $name
-     * @param string $primaryFieldName
-     * @param string $requestFieldName
-     * @param \Sandeep\AdminForm\Model\ResourceModel\Extensions\CollectionFactory $collectionFactory
-     * @param array $addFieldStrategies
-     * @param array $addFilterStrategies
-     * @param array $meta
-     * @param array $data
-     */
+ 
     public function __construct(
         $name,
         $primaryFieldName,
@@ -46,11 +36,7 @@ class DataProvider extends AbstractDataProvider
         $this->addFilterStrategies = $addFilterStrategies;
     }
 
-    /**
-     * Get data
-     *
-     * @return array
-     */
+   
     public function getData()
     {
         if (isset($this->_loadedData)) {
