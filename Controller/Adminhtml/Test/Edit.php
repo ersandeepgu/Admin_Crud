@@ -20,7 +20,7 @@ class Edit extends Action
     public function execute()
     {
         $resultPage = $this->pageFactory->create();
-        $resultPage->getConfig()->getTitle()->prepend(__('Edit Extension details'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Edit details'));
         return $resultPage;
     }
 }
